@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E174D3B6-D864-429B-AD73-CC943E1BA402}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form CTHĐ bán.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form CTHĐ bán.Designer.cs">
+      <DependentUpon>Form CTHĐ bán.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form CTHĐ nhập kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form CTHĐ nhập kho.Designer.cs">
+      <DependentUpon>Form CTHĐ nhập kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form CTHĐ xuất kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form CTHĐ xuất kho.Designer.cs">
+      <DependentUpon>Form CTHĐ xuất kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Cửa hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Cửa hàng.Designer.cs">
+      <DependentUpon>Form Cửa hàng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form HĐ bán.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form HĐ bán.Designer.cs">
+      <DependentUpon>Form HĐ bán.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form HĐ nhập kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form HĐ nhập kho.Designer.cs">
+      <DependentUpon>Form HĐ nhập kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form HĐ xuất kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form HĐ xuất kho.Designer.cs">
+      <DependentUpon>Form HĐ xuất kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form kho.Designer.cs">
+      <DependentUpon>Form kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form khách hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form khách hàng.Designer.cs">
+      <DependentUpon>Form khách hàng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Loại SP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Loại SP.Designer.cs">
+      <DependentUpon>Form Loại SP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Ngquanly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Ngquanly.Designer.cs">
+      <DependentUpon>Form Ngquanly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Nhà cung cấp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Nhà cung cấp.Designer.cs">
+      <DependentUpon>Form Nhà cung cấp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Nhân viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Nhân viên.Designer.cs">
+      <DependentUpon>Form Nhân viên.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Nhóm SP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Nhóm SP.Designer.cs">
+      <DependentUpon>Form Nhóm SP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form SP tồn CH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form SP tồn CH.Designer.cs">
+      <DependentUpon>Form SP tồn CH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form SP tồn kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form SP tồn kho.Designer.cs">
+      <DependentUpon>Form SP tồn kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Sản phẩm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Sản phẩm.Designer.cs">
+      <DependentUpon>Form Sản phẩm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form CTHĐ bán.resx">
+      <DependentUpon>Form CTHĐ bán.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form CTHĐ nhập kho.resx">
+      <DependentUpon>Form CTHĐ nhập kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form CTHĐ xuất kho.resx">
+      <DependentUpon>Form CTHĐ xuất kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Cửa hàng.resx">
+      <DependentUpon>Form Cửa hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form HĐ bán.resx">
+      <DependentUpon>Form HĐ bán.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form HĐ nhập kho.resx">
+      <DependentUpon>Form HĐ nhập kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form kho.resx">
+      <DependentUpon>Form kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form khách hàng.resx">
+      <DependentUpon>Form khách hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Loại SP.resx">
+      <DependentUpon>Form Loại SP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Ngquanly.resx">
+      <DependentUpon>Form Ngquanly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Nhà cung cấp.resx">
+      <DependentUpon>Form Nhà cung cấp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Nhân viên.resx">
+      <DependentUpon>Form Nhân viên.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Nhóm SP.resx">
+      <DependentUpon>Form Nhóm SP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form SP tồn CH.resx">
+      <DependentUpon>Form SP tồn CH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form SP tồn kho.resx">
+      <DependentUpon>Form SP tồn kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Sản phẩm.resx">
+      <DependentUpon>Form Sản phẩm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
