@@ -170,6 +170,7 @@
             this.bt_Thoat.TabIndex = 13;
             this.bt_Thoat.Text = "Thoát";
             this.bt_Thoat.UseVisualStyleBackColor = true;
+            this.bt_Thoat.Click += new System.EventHandler(this.bt_Thoat_Click);
             // 
             // Them_CuaHang
             // 

@@ -23,5 +23,19 @@ namespace QuanLyChuoiCH.BUS
         {
             d.insertData(MaCH, TenCH, SDTCH, DiaChi, MaNgQuanLy);
         }
+    public void Sua_CuaHang(String MaCH, String TenCH, String SDTCH, String DiaChi, String MaNgQuanLy)
+       {
+            d.update(MaCH, TenCH, SDTCH, DiaChi, MaNgQuanLy);
+        }
+    public void Xoa_CuaHang( String MaCH)
+        {
+            d.delete(MaCH);
+        }
+    public int Check_MaCH(String MaCH)
+        {
+            int kq = d.Check_MaCH(MaCH);
+            return kq;
+        }
     }
+
 }

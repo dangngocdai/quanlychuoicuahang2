@@ -29,9 +29,9 @@ namespace QuanLyChuoiCH.View
                 //MessageBox.Show("DangNhapThanhCong");
                 CuaHang f = new CuaHang();
                 f.Show();
-                FormDangNhap g = new FormDangNhap();
-                g.Close();
+               
             }
+      
         }
 
         private void button2_Click(object sender, EventArgs e)

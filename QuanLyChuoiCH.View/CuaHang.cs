@@ -26,7 +26,16 @@ namespace QuanLyChuoiCH.View
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            int kq = CH.Check_MaCH(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            if (kq == 0)
+            {
+                CH.Xoa_CuaHang(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Không Thể Xóa Cửa Hàng");
+            }
+            this.load();
         }
        /* public void getData()
         {
@@ -34,14 +43,15 @@ namespace QuanLyChuoiCH.View
         }*/
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
         private void CuaHang_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanLyChuoiCuaHang2DataSet.CuaHang_Lay' table. You can move, or remove it, as needed.
             load();
-
+            button3.Enabled = false;
+            button4.Enabled = false;
         }
         public void load()
         {
@@ -52,6 +62,47 @@ namespace QuanLyChuoiCH.View
         {
             Them_CuaHang T = new Them_CuaHang(this);
             T.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {   
+            SuaCuaHang f = new SuaCuaHang(this);
+            f.Show();
+        }
+        public string layMaCH()
+        {
+            string ma = dataGridView1.CurrentRow.Cells[0].Value.ToString();//lay ma cua hang
+            return ma;
+        }
+        public string layTenCH()
+        {
+            string ma = dataGridView1.CurrentRow.Cells[1].Value.ToString();//lay ma cua hang
+            return ma;
+        }
+        public string laySDTCH()
+        {
+            string ma = dataGridView1.CurrentRow.Cells[2].Value.ToString();//lay ma cua hang
+            return ma;
+        }
+        public string layDiaChiCH()
+        {
+            string ma = dataGridView1.CurrentRow.Cells[3].Value.ToString();//lay ma cua hang
+            return ma;
+        }
+        public string layNgQLCH()
+        {
+            string ma = dataGridView1.CurrentRow.Cells[4].Value.ToString();//lay ma cua hang
+            return ma;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            button3.Enabled = true;
+            int kq = CH.Check_MaCH(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            if (kq == 0)
+            {
+                button4.Enabled = true;
+            }
         }
     }
 }

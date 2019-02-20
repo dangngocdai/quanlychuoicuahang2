@@ -34,17 +34,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sDTCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maNgQuanLyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cuaHangLayBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyChuoiCuaHang2DataSet = new QuanLyChuoiCH.View.QuanLyChuoiCuaHang2DataSet();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.cuaHang_LayTableAdapter = new QuanLyChuoiCH.View.QuanLyChuoiCuaHang2DataSetTableAdapters.CuaHang_LayTableAdapter();
+            this.maCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maNgQuanLyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuaHangLayBindingSource)).BeginInit();
@@ -92,6 +92,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -101,41 +103,14 @@
             this.diaChiDataGridViewTextBoxColumn,
             this.maNgQuanLyDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cuaHangLayBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(263, 170);
+            this.dataGridView1.Location = new System.Drawing.Point(256, 170);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 275);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(552, 275);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // maCHDataGridViewTextBoxColumn
-            // 
-            this.maCHDataGridViewTextBoxColumn.DataPropertyName = "MaCH";
-            this.maCHDataGridViewTextBoxColumn.HeaderText = "MaCH";
-            this.maCHDataGridViewTextBoxColumn.Name = "maCHDataGridViewTextBoxColumn";
-            // 
-            // tenCHDataGridViewTextBoxColumn
-            // 
-            this.tenCHDataGridViewTextBoxColumn.DataPropertyName = "TenCH";
-            this.tenCHDataGridViewTextBoxColumn.HeaderText = "TenCH";
-            this.tenCHDataGridViewTextBoxColumn.Name = "tenCHDataGridViewTextBoxColumn";
-            // 
-            // sDTCHDataGridViewTextBoxColumn
-            // 
-            this.sDTCHDataGridViewTextBoxColumn.DataPropertyName = "SDTCH";
-            this.sDTCHDataGridViewTextBoxColumn.HeaderText = "SDTCH";
-            this.sDTCHDataGridViewTextBoxColumn.Name = "sDTCHDataGridViewTextBoxColumn";
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // maNgQuanLyDataGridViewTextBoxColumn
-            // 
-            this.maNgQuanLyDataGridViewTextBoxColumn.DataPropertyName = "MaNgQuanLy";
-            this.maNgQuanLyDataGridViewTextBoxColumn.HeaderText = "MaNgQuanLy";
-            this.maNgQuanLyDataGridViewTextBoxColumn.Name = "maNgQuanLyDataGridViewTextBoxColumn";
             // 
             // cuaHangLayBindingSource
             // 
@@ -167,6 +142,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Sửa Cửa Hàng";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -182,6 +158,44 @@
             // cuaHang_LayTableAdapter
             // 
             this.cuaHang_LayTableAdapter.ClearBeforeFill = true;
+            // 
+            // maCHDataGridViewTextBoxColumn
+            // 
+            this.maCHDataGridViewTextBoxColumn.DataPropertyName = "MaCH";
+            this.maCHDataGridViewTextBoxColumn.HeaderText = "Mã Cửa Hàng";
+            this.maCHDataGridViewTextBoxColumn.Name = "maCHDataGridViewTextBoxColumn";
+            this.maCHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenCHDataGridViewTextBoxColumn
+            // 
+            this.tenCHDataGridViewTextBoxColumn.DataPropertyName = "TenCH";
+            this.tenCHDataGridViewTextBoxColumn.HeaderText = "Tên Cửa Hàng";
+            this.tenCHDataGridViewTextBoxColumn.Name = "tenCHDataGridViewTextBoxColumn";
+            this.tenCHDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenCHDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // sDTCHDataGridViewTextBoxColumn
+            // 
+            this.sDTCHDataGridViewTextBoxColumn.DataPropertyName = "SDTCH";
+            this.sDTCHDataGridViewTextBoxColumn.HeaderText = "SDT ";
+            this.sDTCHDataGridViewTextBoxColumn.Name = "sDTCHDataGridViewTextBoxColumn";
+            this.sDTCHDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sDTCHDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa Chỉ";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // maNgQuanLyDataGridViewTextBoxColumn
+            // 
+            this.maNgQuanLyDataGridViewTextBoxColumn.DataPropertyName = "MaNgQuanLy";
+            this.maNgQuanLyDataGridViewTextBoxColumn.HeaderText = "Người Quản Lý";
+            this.maNgQuanLyDataGridViewTextBoxColumn.Name = "maNgQuanLyDataGridViewTextBoxColumn";
+            this.maNgQuanLyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maNgQuanLyDataGridViewTextBoxColumn.Width = 110;
             // 
             // CuaHang
             // 

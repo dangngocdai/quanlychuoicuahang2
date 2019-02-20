@@ -91,5 +91,11 @@ namespace QuanLyChuoiCH.View
             CH2.load();
             this.Close();
         }
+
+        private void bt_Thoat_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+        }
     }
 }
