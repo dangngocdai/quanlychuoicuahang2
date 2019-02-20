@@ -11,7 +11,7 @@ namespace QuanLyChuoiCH.BUS
 {
     public class BUS_CuaHang
     {
-        DAL_CuaHang d = new DAL_CuaHang();
+        DAL_CuaHang d = new DAL_CuaHang();//dda
 
         public object ThemCuaHang { get; set; }
 
