@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_CuaHang.cs" />
+    <Compile Include="DAL_HDban.cs" />
     <Compile Include="DAL_kho.cs" />
     <Compile Include="DAL_NgQuanLy.cs" />
+    <Compile Include="DAL_SanPham.cs" />
+    <Compile Include="DAL_SPTonkhocs.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Uses.cs" />

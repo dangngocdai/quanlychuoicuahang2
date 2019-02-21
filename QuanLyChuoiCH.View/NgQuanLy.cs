@@ -116,5 +116,10 @@ namespace QuanLyChuoiCH.View
         {
             this.load();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
