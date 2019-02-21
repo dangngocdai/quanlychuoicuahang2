@@ -64,6 +64,18 @@
     <Compile Include="CuaHang.Designer.cs">
       <DependentUpon>CuaHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sua_NgQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sua_NgQuanLy.Designer.cs">
+      <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNgQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNgQuanLy.Designer.cs">
+      <DependentUpon>ThemNgQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Them_CuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CuaHang.resx">
       <DependentUpon>CuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sua_NgQuanLy.resx">
+      <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNgQuanLy.resx">
+      <DependentUpon>ThemNgQuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Them_CuaHang.resx">
       <DependentUpon>Them_CuaHang.cs</DependentUpon>
