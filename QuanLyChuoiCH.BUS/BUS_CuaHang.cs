@@ -36,6 +36,10 @@ namespace QuanLyChuoiCH.BUS
             int kq = d.Check_MaCH(MaCH);
             return kq;
         }
+    
+    public DataTable TimKiem(String GiaTri)
+    {
+        return d.TimKiem(GiaTri);
     }
-
+    }
 }

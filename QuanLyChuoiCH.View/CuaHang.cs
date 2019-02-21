@@ -104,5 +104,12 @@ namespace QuanLyChuoiCH.View
                 button4.Enabled = true;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String Giatri = textBox1.Text;
+            dataGridView1.DataSource = CH.TimKiem(Giatri);
+           // this.load();
+        }
     }
 }
