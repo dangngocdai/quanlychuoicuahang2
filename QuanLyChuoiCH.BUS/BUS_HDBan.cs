@@ -18,12 +18,12 @@ namespace QuanLyChuoiCH.DAL
         public void insertData(String MaHDBan, String MaCH, String MaKH, String NgayBan, String ThongTin, String MaNV)
         {
 
-            q.insertData(MaHDBan, MaCH, MaKH, NgayBan, ThongTin,);
+            q.insertData(MaHDBan, MaCH, MaKH, NgayBan, ThongTin,MaNV);
         }
         public void update(String MaHDBan, String MaCH, String MaKH, String NgayBan, String ThongTin, String MaNV)
         {
 
-            q.update(MaHDBan, MaCH, MaKH, NgayBan, ThongTin,);
+            q.update(MaHDBan, MaCH, MaKH, NgayBan, ThongTin,MaNV);
         }
         public void delete(String MaHDBan)
         {

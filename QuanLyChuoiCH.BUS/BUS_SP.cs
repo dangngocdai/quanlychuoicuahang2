@@ -13,7 +13,7 @@ namespace QuanLyChuoiCH.BUS
         QuanLyChuoiCH.DAL.DAL_SanPham o = new DAL_SanPham();
         public DataTable GetData()
         {
-           
+
             return o.GetData();
         }
         public void insertData(String MaSP, String TenSP, String MaLoaiSP, String MaNhomSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
@@ -29,3 +29,4 @@ namespace QuanLyChuoiCH.BUS
             o.delete(MaSP);
         }
     }
+}
