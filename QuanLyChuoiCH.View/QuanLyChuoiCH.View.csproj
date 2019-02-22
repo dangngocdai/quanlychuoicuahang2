@@ -52,6 +52,12 @@
     <Compile Include="NgQuanLy.Designer.cs">
       <DependentUpon>NgQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuaCuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,8 +101,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyChuoiCuaHang2DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Them_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them_SanPham.Designer.cs">
+      <DependentUpon>Them_SanPham.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="NgQuanLy.resx">
       <DependentUpon>NgQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuaCuaHang.resx">
       <DependentUpon>SuaCuaHang.cs</DependentUpon>
@@ -126,6 +141,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Them_SanPham.resx">
+      <DependentUpon>Them_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

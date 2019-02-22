@@ -8,9 +8,9 @@ using QuanLyChuoiCH.DAL;
 
 namespace QuanLyChuoiCH.BUS
 {
-    class BUS_SP
+    public partial class BUS_SP
     {
-        QuanLyChuoiCH.DAL.DAL_SanPham o = new DAL_SanPham();
+        DAL_SanPham o = new DAL_SanPham();
         public DataTable GetData()
         {
 
