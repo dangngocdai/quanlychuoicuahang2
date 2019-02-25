@@ -47,6 +47,7 @@
     <Compile Include="BUS_LoaiSP.cs" />
     <Compile Include="BUS_NgQuanLy.cs" />
     <Compile Include="BUS_NhaCC.cs" />
+    <Compile Include="BUS_NhanVien.cs" />
     <Compile Include="BUS_NhomSP.cs" />
     <Compile Include="BUS_SP.cs" />
     <Compile Include="BUS_SPTonkho.cs" />
