@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Data;
 using QuanLyChuoiCH.DAL;
 
-public namespace QuanLyChuoiCH.BUS
+ namespace QuanLyChuoiCH.BUS
 {
-    class BUS_KhachHang
+    public class BUS_KhachHang
     {
         DAL_KhachHang b = new DAL_KhachHang();
         public DataTable GetData()

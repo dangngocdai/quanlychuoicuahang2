@@ -28,5 +28,9 @@ namespace QuanLyChuoiCH.BUS
         {
             o.delete(MaSP);
         }
+        public int Check_MaSP(String MaSP)
+        {
+            return o.Check_MaSP(MaSP);
+        }
     }
 }

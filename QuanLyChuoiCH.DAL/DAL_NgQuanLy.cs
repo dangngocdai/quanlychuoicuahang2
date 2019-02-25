@@ -76,7 +76,7 @@ namespace QuanLyChuoiCH.DAL
             cmd.Parameters.Add(new SqlParameter("@MaNgQuanLy", MaNgQuanLy));
             int kq3 = (int)cmd.ExecuteScalar();
             con.Close();
-            return kq3;
+            return kq1 + kq2 + kq3;
         }
         public DataTable TimKiem(String GiaTri)
         {

@@ -51,6 +51,7 @@
             this.bt_Xoa.TabIndex = 11;
             this.bt_Xoa.Text = "Xóa Sản Phẩm";
             this.bt_Xoa.UseVisualStyleBackColor = true;
+            this.bt_Xoa.Click += new System.EventHandler(this.bt_Xoa_Click);
             // 
             // bt_Sua
             // 
@@ -110,6 +111,7 @@
             this.bt_All.TabIndex = 5;
             this.bt_All.Text = "Hiển Thị All";
             this.bt_All.UseVisualStyleBackColor = true;
+            this.bt_All.Click += new System.EventHandler(this.bt_All_Click);
             // 
             // bt_TimKiem
             // 
@@ -119,6 +121,7 @@
             this.bt_TimKiem.TabIndex = 4;
             this.bt_TimKiem.Text = "Tìm Kiếm";
             this.bt_TimKiem.UseVisualStyleBackColor = true;
+            this.bt_TimKiem.Click += new System.EventHandler(this.bt_TimKiem_Click);
             // 
             // txt_TimKiem
             // 

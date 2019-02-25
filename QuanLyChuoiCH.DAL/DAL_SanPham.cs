@@ -61,6 +61,32 @@ namespace QuanLyChuoiCH.DAL
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public int Check_MaSP(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("CheckMaSP_CTHDBan", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            int kq1 = (int)cmd.ExecuteScalar();
+            cmd = new SqlCommand("CheckMaSP_CTHDNhapKho", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            int kq2 = (int)cmd.ExecuteScalar();
+            cmd = new SqlCommand("CheckMaSP_CTHDXuatKho", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            int kq3 = (int)cmd.ExecuteScalar();
+            cmd = new SqlCommand("CheckMaSP_SPTonCH", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            int kq4 = (int)cmd.ExecuteScalar();
+            cmd = new SqlCommand("CheckMaSP_SPTonKho", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            int kq5 = (int)cmd.ExecuteScalar();
+            con.Close();
+            return kq1 + kq2 + kq3 + kq4 + kq5;
+        }
 
     }
 }
