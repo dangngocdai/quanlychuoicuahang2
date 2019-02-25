@@ -14,6 +14,7 @@ namespace QuanLyChuoiCH.View
     public partial class SanPham : Form
     {
         BUS_SP SP = new BUS_SP();
+
         public SanPham()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace QuanLyChuoiCH.View
         private void SanPham_Load(object sender, EventArgs e)
         {
             load();
+            bt_Sua.Enabled = false;
         }
         public void load()
         {
@@ -31,6 +33,57 @@ namespace QuanLyChuoiCH.View
         private void bt_Them_Click(object sender, EventArgs e)
         {
             Them_SanPham f = new Them_SanPham(this);
+            f.Show();
+        }
+        public string layMaSanPham()
+        {
+
+            return dataGridView1.CurrentRow.Cells[0].Value.ToString();
+        }
+        public string layTenSanPham()
+        {
+
+            return dataGridView1.CurrentRow.Cells[1].Value.ToString();
+        }
+        public string layLoaiSanPham()
+        {
+
+            return dataGridView1.CurrentRow.Cells[2].Value.ToString();
+        }
+        public string layNhomSanPham()
+        {
+
+            return dataGridView1.CurrentRow.Cells[3].Value.ToString();
+        }
+        public string layNhaCC()
+        {
+
+            return dataGridView1.CurrentRow.Cells[4].Value.ToString();
+        }
+        public string layThongTin()
+        {
+
+            return dataGridView1.CurrentRow.Cells[5].Value.ToString();
+        }
+        public string layGiaBan()
+        {
+
+            return dataGridView1.CurrentRow.Cells[6].Value.ToString();
+        }
+        public string layBaoHanh()
+        {
+
+            return dataGridView1.CurrentRow.Cells[7].Value.ToString();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            bt_Sua.Enabled = true;
+        }
+
+        private void bt_Sua_Click(object sender, EventArgs e)
+        {
+            Sua_SanPham f = new Sua_SanPham(this);
             f.Show();
         }
     }

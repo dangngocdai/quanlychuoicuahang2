@@ -122,8 +122,10 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(242, 85);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(263, 29);
             this.textBox1.TabIndex = 8;
+            this.textBox1.TabStop = false;
             // 
             // textBox2
             // 

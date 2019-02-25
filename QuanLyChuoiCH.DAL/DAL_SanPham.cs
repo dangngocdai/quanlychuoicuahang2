@@ -39,7 +39,7 @@ namespace QuanLyChuoiCH.DAL
         public void update(String MaSP, String TenSP, String MaLoaiSP, String MaNhomSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("SP_Them", con);
+            SqlCommand cmd = new SqlCommand("SP_Sua", con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
             cmd.Parameters.Add(new SqlParameter("@TenSP", TenSP));

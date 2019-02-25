@@ -76,6 +76,12 @@
     <Compile Include="Sua_NgQuanLy.Designer.cs">
       <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sua_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sua_SanPham.Designer.cs">
+      <DependentUpon>Sua_SanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemNgQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sua_NgQuanLy.resx">
       <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sua_SanPham.resx">
+      <DependentUpon>Sua_SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNgQuanLy.resx">
       <DependentUpon>ThemNgQuanLy.cs</DependentUpon>

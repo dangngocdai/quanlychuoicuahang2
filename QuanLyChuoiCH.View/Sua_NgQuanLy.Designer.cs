@@ -115,8 +115,10 @@
             // 
             this.txt_MaNgQuanLy.Location = new System.Drawing.Point(166, 71);
             this.txt_MaNgQuanLy.Name = "txt_MaNgQuanLy";
+            this.txt_MaNgQuanLy.ReadOnly = true;
             this.txt_MaNgQuanLy.Size = new System.Drawing.Size(208, 29);
             this.txt_MaNgQuanLy.TabIndex = 25;
+            this.txt_MaNgQuanLy.TabStop = false;
             // 
             // label8
             // 
@@ -215,7 +217,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Sua_NgQuanLy";
             this.Text = "Sua_NgQuanLy";
             this.Load += new System.EventHandler(this.Sua_NgQuanLy_Load);

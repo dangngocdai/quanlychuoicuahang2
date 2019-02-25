@@ -61,6 +61,7 @@
             this.bt_Sua.TabIndex = 10;
             this.bt_Sua.Text = "Sửa Sản Phẩm";
             this.bt_Sua.UseVisualStyleBackColor = true;
+            this.bt_Sua.Click += new System.EventHandler(this.bt_Sua_Click);
             // 
             // bt_Them
             // 
@@ -85,6 +86,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(507, 215);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox1
             // 
@@ -155,7 +157,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SanPham";
             this.Text = "Quản Lý Sản Phẩm";
             this.Load += new System.EventHandler(this.SanPham_Load);
