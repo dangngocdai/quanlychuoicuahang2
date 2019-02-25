@@ -46,6 +46,7 @@
     <Compile Include="BUS_CuaHang.cs" />
     <Compile Include="BUS_HDBan.cs" />
     <Compile Include="BUS_HDNhapKho.cs" />
+    <Compile Include="BUS_HDXuatKho.cs" />
     <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_kho.cs" />
     <Compile Include="BUS_LoaiSP.cs" />
