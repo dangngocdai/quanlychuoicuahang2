@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_CTHDBan.cs" />
+    <Compile Include="DAL_CTHDNhapKho.cs" />
     <Compile Include="DAL_CuaHang.cs" />
     <Compile Include="DAL_HDban.cs" />
+    <Compile Include="DAL_HDNhapKho.cs" />
+    <Compile Include="DAL_HDXuatKho.cs" />
     <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_kho.cs" />
     <Compile Include="DAL_LoaiSP.cs" />
