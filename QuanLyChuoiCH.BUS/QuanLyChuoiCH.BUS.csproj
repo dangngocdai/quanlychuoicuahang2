@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_CTHDBan.cs" />
     <Compile Include="BUS_CuaHang.cs" />
     <Compile Include="BUS_HDBan.cs" />
     <Compile Include="BUS_kho.cs" />
