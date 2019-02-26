@@ -31,5 +31,13 @@ using QuanLyChuoiCH.DAL;
         {
             b.delete(MaKH);
         }
+        public int check(String MaKH)
+        {
+            return b.Check(MaKH);
+        }
+        public DataTable TimKiem(String GiaTri)
+        {
+            return b.TimKiem(GiaTri);
+        }
     }
 }

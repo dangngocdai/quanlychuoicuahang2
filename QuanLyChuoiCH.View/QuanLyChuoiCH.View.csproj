@@ -58,11 +58,29 @@
     <Compile Include="Kho.Designer.cs">
       <DependentUpon>Kho.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaiSP.Designer.cs">
+      <DependentUpon>LoaiSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="NgQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NgQuanLy.Designer.cs">
       <DependentUpon>NgQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaCC.Designer.cs">
+      <DependentUpon>NhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhomSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhomSP.Designer.cs">
+      <DependentUpon>NhomSP.cs</DependentUpon>
     </Compile>
     <Compile Include="SanPham.cs">
       <SubType>Form</SubType>
@@ -99,6 +117,18 @@
     </Compile>
     <Compile Include="Sua_NgQuanLy.Designer.cs">
       <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sua_NhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sua_NhaCC.Designer.cs">
+      <DependentUpon>Sua_NhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sua_NhomSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sua_NhomSP.Designer.cs">
+      <DependentUpon>Sua_NhomSP.cs</DependentUpon>
     </Compile>
     <Compile Include="Sua_SanPham.cs">
       <SubType>Form</SubType>
@@ -143,11 +173,35 @@
     <Compile Include="Them_KhachHang.Designer.cs">
       <DependentUpon>Them_KhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Them_LoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them_LoaiSP.Designer.cs">
+      <DependentUpon>Them_LoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them_NhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them_NhaCC.Designer.cs">
+      <DependentUpon>Them_NhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them_NhomSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them_NhomSP.Designer.cs">
+      <DependentUpon>Them_NhomSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Them_SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Them_SanPham.Designer.cs">
       <DependentUpon>Them_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sua_LoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sua_LoaiSP.Designer.cs">
+      <DependentUpon>Sua_LoaiSP.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -155,8 +209,17 @@
     <EmbeddedResource Include="Kho.resx">
       <DependentUpon>Kho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoaiSP.resx">
+      <DependentUpon>LoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NgQuanLy.resx">
       <DependentUpon>NgQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaCC.resx">
+      <DependentUpon>NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhomSP.resx">
+      <DependentUpon>NhomSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
@@ -173,8 +236,17 @@
     <EmbeddedResource Include="Sua_Kho.resx">
       <DependentUpon>Sua_Kho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sua_LoaiSP.resx">
+      <DependentUpon>Sua_LoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sua_NgQuanLy.resx">
       <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sua_NhaCC.resx">
+      <DependentUpon>Sua_NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sua_NhomSP.resx">
+      <DependentUpon>Sua_NhomSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sua_SanPham.resx">
       <DependentUpon>Sua_SanPham.cs</DependentUpon>
@@ -203,6 +275,15 @@
     </Compile>
     <EmbeddedResource Include="Them_KhachHang.resx">
       <DependentUpon>Them_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them_LoaiSP.resx">
+      <DependentUpon>Them_LoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them_NhaCC.resx">
+      <DependentUpon>Them_NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them_NhomSP.resx">
+      <DependentUpon>Them_NhomSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Them_SanPham.resx">
       <DependentUpon>Them_SanPham.cs</DependentUpon>

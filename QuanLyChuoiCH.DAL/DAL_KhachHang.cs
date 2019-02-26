@@ -54,5 +54,28 @@ namespace QuanLyChuoiCH.DAL
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public int Check(String MaKH)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("CheckMaKH_HDBan", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaKH", MaKH));
+            int kq1 = (int)cmd.ExecuteScalar();
+            con.Close();
+            return kq1;
+        }
+        public DataTable TimKiem(String GiaTri)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("TimKiem_KhachHang", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@GiaTri", GiaTri));
+            DataTable tb = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tb);
+
+            con.Close();
+            return tb;
+        }
     }
 }

@@ -16,5 +16,25 @@ namespace QuanLyChuoiCH.BUS
         {
             return NCC.GetData();
         }
+        public void insert(String MaNCC, String TenNCC, String SDTNCC, String DiaChi)
+        {
+            NCC.insertData(MaNCC, TenNCC, SDTNCC, DiaChi);
+        }
+        public void update(String MaNCC, String TenNCC, String SDTNCC, String DiaChi)
+        {
+            NCC.updateData(MaNCC, TenNCC, SDTNCC, DiaChi);
+        }
+        public void delete(String MaNCC)
+        {
+            NCC.delete(MaNCC);
+        }
+        public int check(String MaNCC)
+        {
+            return NCC.Check(MaNCC);
+        }
+        public DataTable TimKiem(String GiaTri)
+        {
+            return NCC.TimKiem(GiaTri);
+        }
     }
 }

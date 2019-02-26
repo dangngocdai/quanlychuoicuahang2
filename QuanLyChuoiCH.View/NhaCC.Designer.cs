@@ -1,6 +1,6 @@
 ﻿namespace QuanLyChuoiCH.View
 {
-    partial class KhachHang
+    partial class NhaCC
     {
         /// <summary>
         /// Required designer variable.
@@ -45,33 +45,33 @@
             // bt_Xoa
             // 
             this.bt_Xoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Xoa.Location = new System.Drawing.Point(30, 306);
+            this.bt_Xoa.Location = new System.Drawing.Point(15, 308);
             this.bt_Xoa.Name = "bt_Xoa";
             this.bt_Xoa.Size = new System.Drawing.Size(159, 56);
-            this.bt_Xoa.TabIndex = 11;
-            this.bt_Xoa.Text = "Xóa Khách Hàng";
+            this.bt_Xoa.TabIndex = 21;
+            this.bt_Xoa.Text = "Xóa Nhà CC";
             this.bt_Xoa.UseVisualStyleBackColor = true;
             this.bt_Xoa.Click += new System.EventHandler(this.bt_Xoa_Click);
             // 
             // bt_Sua
             // 
             this.bt_Sua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Sua.Location = new System.Drawing.Point(30, 252);
+            this.bt_Sua.Location = new System.Drawing.Point(15, 254);
             this.bt_Sua.Name = "bt_Sua";
             this.bt_Sua.Size = new System.Drawing.Size(159, 48);
-            this.bt_Sua.TabIndex = 10;
-            this.bt_Sua.Text = "Sửa Khách Hàng";
+            this.bt_Sua.TabIndex = 20;
+            this.bt_Sua.Text = "Sửa Nhà CC";
             this.bt_Sua.UseVisualStyleBackColor = true;
             this.bt_Sua.Click += new System.EventHandler(this.bt_Sua_Click);
             // 
             // bt_Them
             // 
             this.bt_Them.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Them.Location = new System.Drawing.Point(30, 163);
+            this.bt_Them.Location = new System.Drawing.Point(15, 165);
             this.bt_Them.Name = "bt_Them";
             this.bt_Them.Size = new System.Drawing.Size(159, 45);
-            this.bt_Them.TabIndex = 9;
-            this.bt_Them.Text = "Thêm Khách Hàng";
+            this.bt_Them.TabIndex = 19;
+            this.bt_Them.Text = "Thêm Nhà CC";
             this.bt_Them.UseVisualStyleBackColor = true;
             this.bt_Them.Click += new System.EventHandler(this.bt_Them_Click);
             // 
@@ -80,13 +80,13 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(217, 153);
+            this.dataGridView1.Location = new System.Drawing.Point(202, 155);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(507, 215);
-            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.Size = new System.Drawing.Size(487, 215);
+            this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox1
@@ -96,10 +96,10 @@
             this.groupBox1.Controls.Add(this.txt_TimKiem);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 0);
+            this.groupBox1.Location = new System.Drawing.Point(3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(708, 145);
-            this.groupBox1.TabIndex = 8;
+            this.groupBox1.Size = new System.Drawing.Size(686, 145);
+            this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Công Cụ";
             // 
@@ -145,25 +145,26 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(247, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 31);
+            this.label1.Size = new System.Drawing.Size(189, 31);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Khách Hàng";
+            this.label1.Text = "Nhà Cung Cấp";
             // 
-            // KhachHang
+            // NhaCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 371);
+            this.ClientSize = new System.Drawing.Size(696, 374);
             this.Controls.Add(this.bt_Xoa);
             this.Controls.Add(this.bt_Sua);
             this.Controls.Add(this.bt_Them);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "KhachHang";
-            this.Text = "Khách Hàng";
-            this.Load += new System.EventHandler(this.KhachHang_Load);
+            this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "NhaCC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Nhà Cung Cấp";
+            this.Load += new System.EventHandler(this.NhaCC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

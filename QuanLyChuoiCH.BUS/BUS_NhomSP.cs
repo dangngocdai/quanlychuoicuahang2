@@ -16,5 +16,25 @@ namespace QuanLyChuoiCH.BUS
         {
             return NSP.GetData();
         }
+        public void insert(String MaNhomSP, String TenNhomSP, String ThongTinNhom)
+        {
+            NSP.insertData(MaNhomSP, TenNhomSP, ThongTinNhom);
+        }
+        public void update(String MaNhomSP, String TenNhomSP, String ThongTinNhom)
+        {
+            NSP.updateData(MaNhomSP, TenNhomSP, ThongTinNhom);
+        }
+        public void delete(String MaNhomSP)
+        {
+            NSP.delete(MaNhomSP);
+        }
+        public int check(String MaNhomSP)
+        {
+            return NSP.Check(MaNhomSP);
+        }
+        public DataTable TimKiem(String GiaTri)
+        {
+            return NSP.TimKiem(GiaTri);
+        }
     }
 }

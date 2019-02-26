@@ -1,5 +1,4 @@
-﻿using QuanLyChuoiCH.BUS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,29 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyChuoiCH.BUS;
 
 namespace QuanLyChuoiCH.View
 {
-    public partial class Them_KhachHang : Form
+    public partial class Them_NhomSP : Form
     {
-        BUS_KhachHang KH = new BUS_KhachHang();
-        KhachHang fKH = new KhachHang();
-        public Them_KhachHang(KhachHang fKH1)
+        private BUS_NhomSP NSP = new BUS_NhomSP();
+        NhomSP fNSP = new NhomSP();
+        public Them_NhomSP(NhomSP fNSP1)
         {
             InitializeComponent();
-            fKH = fKH1;
-        }
-
-        private void Them_KhachHang_Load(object sender, EventArgs e)
-        {
-
+            fNSP = fNSP1;
         }
 
         private void bt_Them_Click(object sender, EventArgs e)
         {
-            KH.insertData(txt_MaSP.Text, txt_TenSP.Text, txt_GiaBan.Text, textBox1.Text);
-            
-            fKH.load();
+            NSP.insert(txt_MaNhom.Text, txt_TenNhom.Text, Rtxt_ThongTin.Text);
+            fNSP.load();
             this.Close();
         }
 
