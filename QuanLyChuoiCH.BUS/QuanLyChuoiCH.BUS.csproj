@@ -41,12 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_CTHDBan.cs" />
+    <Compile Include="BUS_CTHDNhapKho.cs" />
     <Compile Include="BUS_CuaHang.cs" />
     <Compile Include="BUS_HDBan.cs" />
+    <Compile Include="BUS_HDNhapKho.cs" />
+    <Compile Include="BUS_HDXuatKho.cs" />
+    <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_kho.cs" />
     <Compile Include="BUS_LoaiSP.cs" />
     <Compile Include="BUS_NgQuanLy.cs" />
     <Compile Include="BUS_NhaCC.cs" />
+    <Compile Include="BUS_NhanVien.cs" />
     <Compile Include="BUS_NhomSP.cs" />
     <Compile Include="BUS_SP.cs" />
     <Compile Include="BUS_SPTonkho.cs" />

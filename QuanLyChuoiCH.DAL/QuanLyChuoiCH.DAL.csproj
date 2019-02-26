@@ -41,12 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_CTHDBan.cs" />
+    <Compile Include="DAL_CTHDNhapKho.cs" />
     <Compile Include="DAL_CuaHang.cs" />
     <Compile Include="DAL_HDban.cs" />
+    <Compile Include="DAL_HDNhapKho.cs" />
+    <Compile Include="DAL_HDXuatKho.cs" />
+    <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_kho.cs" />
     <Compile Include="DAL_LoaiSP.cs" />
     <Compile Include="DAL_NgQuanLy.cs" />
     <Compile Include="DAL_NhaCC.cs" />
+    <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="DAL_NhomSP.cs" />
     <Compile Include="DAL_SanPham.cs" />
     <Compile Include="DAL_SPTonkhocs.cs" />
