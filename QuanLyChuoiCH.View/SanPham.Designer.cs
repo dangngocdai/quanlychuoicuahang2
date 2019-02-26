@@ -51,6 +51,7 @@
             this.bt_Xoa.TabIndex = 11;
             this.bt_Xoa.Text = "Xóa Sản Phẩm";
             this.bt_Xoa.UseVisualStyleBackColor = true;
+            this.bt_Xoa.Click += new System.EventHandler(this.bt_Xoa_Click);
             // 
             // bt_Sua
             // 

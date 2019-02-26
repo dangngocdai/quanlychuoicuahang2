@@ -86,5 +86,10 @@ namespace QuanLyChuoiCH.View
             Sua_SanPham f = new Sua_SanPham(this);
             f.Show();
         }
+
+        private void bt_Xoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
