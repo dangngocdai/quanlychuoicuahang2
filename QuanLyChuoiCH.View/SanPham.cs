@@ -24,6 +24,7 @@ namespace QuanLyChuoiCH.View
         {
             load();
             bt_Sua.Enabled = false;
+            bt_Xoa.Enabled = false;
         }
         public void load()
         {
@@ -79,6 +80,9 @@ namespace QuanLyChuoiCH.View
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             bt_Sua.Enabled = true;
+            if (SP.Check_MaSP(dataGridView1.CurrentRow.Cells[0].Value.ToString()) == 0){
+                bt_Xoa.Enabled = true;
+            };
         }
 
         private void bt_Sua_Click(object sender, EventArgs e)
@@ -88,6 +92,24 @@ namespace QuanLyChuoiCH.View
         }
 
         private void bt_Xoa_Click(object sender, EventArgs e)
+        {
+            if (SP.Check_MaSP(dataGridView1.CurrentRow.Cells[0].Value.ToString()) == 0)
+            {
+                SP.delete(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Không Thể Xóa Người Quản Lý Này!!!!!");
+            }
+            load();
+        }
+
+        private void bt_All_Click(object sender, EventArgs e)
+        {
+            load();
+        }
+
+        private void bt_TimKiem_Click(object sender, EventArgs e)
         {
 
         }
