@@ -87,6 +87,18 @@ namespace QuanLyChuoiCH.DAL
             con.Close();
             return kq1 + kq2 + kq3 + kq4 + kq5;
         }
+        public DataTable TimKiem(String GiaTri)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("TimKiem_SanPham", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@GiaTri", GiaTri));
+            DataTable tb = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(tb);
 
+            con.Close();
+            return tb;
+        }
     }
 }

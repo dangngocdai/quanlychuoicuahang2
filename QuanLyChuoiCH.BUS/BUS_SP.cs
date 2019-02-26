@@ -32,5 +32,10 @@ namespace QuanLyChuoiCH.BUS
         {
             return o.Check_MaSP(MaSP);
         }
+        public DataTable TimKiem(String Giatri)
+        {
+
+            return o.TimKiem(Giatri);
+        }
     }
 }

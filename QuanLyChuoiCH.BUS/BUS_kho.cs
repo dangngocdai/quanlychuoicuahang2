@@ -19,6 +19,22 @@ namespace QuanLyChuoiCH.BUS
         {
             d.insertData(MaKho, TenKho, DiaChi,SDTKho,MaNgQuanLy);
         }
+        public void updatetData(String MaKho, String TenKho, String DiaChi, String SDTKho, String MaNgQuanLy)
+        {
+            d.updateData(MaKho, TenKho, DiaChi, SDTKho, MaNgQuanLy);
+        }
+        public void delete (String MaKho)
+        {
+            d.delete(MaKho);
+        }
+        public int check_MaKho(String MaKho)
+        {
+            return d.check_MaKho(MaKho);
+        }
+        public DataTable TimKiem(String GiaTri)
+        {
+            return d.TimKiem(GiaTri);
+        }
     }
 
 }

@@ -16,7 +16,7 @@ namespace QuanLyChuoiCH.View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SanPham());
+            Application.Run(new Kho());
         }
     }
 }

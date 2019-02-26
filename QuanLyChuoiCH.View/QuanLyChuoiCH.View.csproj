@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kho.Designer.cs">
+      <DependentUpon>Kho.cs</DependentUpon>
+    </Compile>
     <Compile Include="NgQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="CuaHang.Designer.cs">
       <DependentUpon>CuaHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sua_Kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sua_Kho.Designer.cs">
+      <DependentUpon>Sua_Kho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sua_NgQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,12 @@
     </Compile>
     <Compile Include="Sua_SanPham.Designer.cs">
       <DependentUpon>Sua_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKho.Designer.cs">
+      <DependentUpon>ThemKho.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemNgQuanLy.cs">
       <SubType>Form</SubType>
@@ -113,6 +131,9 @@
     <Compile Include="Them_SanPham.Designer.cs">
       <DependentUpon>Them_SanPham.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Kho.resx">
+      <DependentUpon>Kho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NgQuanLy.resx">
       <DependentUpon>NgQuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,11 +146,17 @@
     <EmbeddedResource Include="CuaHang.resx">
       <DependentUpon>CuaHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sua_Kho.resx">
+      <DependentUpon>Sua_Kho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sua_NgQuanLy.resx">
       <DependentUpon>Sua_NgQuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sua_SanPham.resx">
       <DependentUpon>Sua_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKho.resx">
+      <DependentUpon>ThemKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNgQuanLy.resx">
       <DependentUpon>ThemNgQuanLy.cs</DependentUpon>

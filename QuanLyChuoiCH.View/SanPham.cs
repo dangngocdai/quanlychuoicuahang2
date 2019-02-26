@@ -111,7 +111,9 @@ namespace QuanLyChuoiCH.View
 
         private void bt_TimKiem_Click(object sender, EventArgs e)
         {
-
+            String Giatri = txt_TimKiem.Text;
+            dataGridView1.DataSource = SP.TimKiem(Giatri);
+            //this.load();
         }
     }
 }

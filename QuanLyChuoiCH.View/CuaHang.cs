@@ -109,7 +109,7 @@ namespace QuanLyChuoiCH.View
         {
             String Giatri = textBox1.Text;
             dataGridView1.DataSource = CH.TimKiem(Giatri);
-           // this.load();
+            //this.load();
         }
     }
 }
