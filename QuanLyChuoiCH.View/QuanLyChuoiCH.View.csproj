@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,12 +131,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyChuoiCuaHang2DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Them_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them_KhachHang.Designer.cs">
+      <DependentUpon>Them_KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Them_SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Them_SanPham.Designer.cs">
       <DependentUpon>Them_SanPham.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kho.resx">
       <DependentUpon>Kho.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +192,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Them_KhachHang.resx">
+      <DependentUpon>Them_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Them_SanPham.resx">
       <DependentUpon>Them_SanPham.cs</DependentUpon>
     </EmbeddedResource>
