@@ -36,14 +36,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmb_LoaiSP = new System.Windows.Forms.ComboBox();
-            this.cmb_NhomSP = new System.Windows.Forms.ComboBox();
             this.cmb_MaNCC = new System.Windows.Forms.ComboBox();
             this.txt_GiaBan = new System.Windows.Forms.TextBox();
             this.txt_BaoHanh = new System.Windows.Forms.TextBox();
@@ -72,7 +70,7 @@
             // 
             // Rtxt_ThongTin
             // 
-            this.Rtxt_ThongTin.Location = new System.Drawing.Point(195, 266);
+            this.Rtxt_ThongTin.Location = new System.Drawing.Point(195, 231);
             this.Rtxt_ThongTin.Name = "Rtxt_ThongTin";
             this.Rtxt_ThongTin.Size = new System.Drawing.Size(208, 54);
             this.Rtxt_ThongTin.TabIndex = 31;
@@ -95,7 +93,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 336);
+            this.label8.Location = new System.Drawing.Point(14, 301);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 21);
             this.label8.TabIndex = 24;
@@ -104,7 +102,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 269);
+            this.label7.Location = new System.Drawing.Point(12, 234);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(177, 21);
             this.label7.TabIndex = 23;
@@ -113,20 +111,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 235);
+            this.label6.Location = new System.Drawing.Point(12, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 21);
             this.label6.TabIndex = 22;
             this.label6.Text = "Nhà Cung Cấp : ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 21);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Nhóm Sản Phẩm : ";
             // 
             // label4
             // 
@@ -169,7 +158,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 373);
+            this.label9.Location = new System.Drawing.Point(16, 338);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 21);
             this.label9.TabIndex = 34;
@@ -183,32 +172,24 @@
             this.cmb_LoaiSP.Size = new System.Drawing.Size(176, 29);
             this.cmb_LoaiSP.TabIndex = 35;
             // 
-            // cmb_NhomSP
-            // 
-            this.cmb_NhomSP.FormattingEnabled = true;
-            this.cmb_NhomSP.Location = new System.Drawing.Point(195, 188);
-            this.cmb_NhomSP.Name = "cmb_NhomSP";
-            this.cmb_NhomSP.Size = new System.Drawing.Size(176, 29);
-            this.cmb_NhomSP.TabIndex = 36;
-            // 
             // cmb_MaNCC
             // 
             this.cmb_MaNCC.FormattingEnabled = true;
-            this.cmb_MaNCC.Location = new System.Drawing.Point(195, 226);
+            this.cmb_MaNCC.Location = new System.Drawing.Point(195, 191);
             this.cmb_MaNCC.Name = "cmb_MaNCC";
             this.cmb_MaNCC.Size = new System.Drawing.Size(176, 29);
             this.cmb_MaNCC.TabIndex = 37;
             // 
             // txt_GiaBan
             // 
-            this.txt_GiaBan.Location = new System.Drawing.Point(195, 328);
+            this.txt_GiaBan.Location = new System.Drawing.Point(195, 293);
             this.txt_GiaBan.Name = "txt_GiaBan";
             this.txt_GiaBan.Size = new System.Drawing.Size(208, 29);
             this.txt_GiaBan.TabIndex = 38;
             // 
             // txt_BaoHanh
             // 
-            this.txt_BaoHanh.Location = new System.Drawing.Point(195, 363);
+            this.txt_BaoHanh.Location = new System.Drawing.Point(195, 328);
             this.txt_BaoHanh.Name = "txt_BaoHanh";
             this.txt_BaoHanh.Size = new System.Drawing.Size(208, 29);
             this.txt_BaoHanh.TabIndex = 39;
@@ -217,11 +198,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 440);
+            this.ClientSize = new System.Drawing.Size(602, 393);
             this.Controls.Add(this.txt_BaoHanh);
             this.Controls.Add(this.txt_GiaBan);
             this.Controls.Add(this.cmb_MaNCC);
-            this.Controls.Add(this.cmb_NhomSP);
             this.Controls.Add(this.cmb_LoaiSP);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.bt_Thoat);
@@ -232,7 +212,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -257,14 +236,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmb_LoaiSP;
-        private System.Windows.Forms.ComboBox cmb_NhomSP;
         private System.Windows.Forms.ComboBox cmb_MaNCC;
         private System.Windows.Forms.TextBox txt_GiaBan;
         private System.Windows.Forms.TextBox txt_BaoHanh;

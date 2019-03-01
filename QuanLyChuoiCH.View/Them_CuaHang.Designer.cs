@@ -69,6 +69,7 @@
             // 
             // Cmb_QuanLy
             // 
+            this.Cmb_QuanLy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_QuanLy.FormattingEnabled = true;
             this.Cmb_QuanLy.Location = new System.Drawing.Point(232, 283);
             this.Cmb_QuanLy.Name = "Cmb_QuanLy";

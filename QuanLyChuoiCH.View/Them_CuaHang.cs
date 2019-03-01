@@ -16,10 +16,17 @@ namespace QuanLyChuoiCH.View
         private BUS_CuaHang CH = new BUS_CuaHang();
         private BUS_NgQuanLy QL = new BUS_NgQuanLy();
         private CuaHang CH2 = new CuaHang();
+        NhapKho fNK;
+        XuatKho fXK = new XuatKho();
         public Them_CuaHang(CuaHang CH1)
         {
             InitializeComponent();
             CH2 = CH1;
+        }
+        public Them_CuaHang(XuatKho fXK1)
+        {
+            InitializeComponent();
+            fXK = fXK1;
         }
 
         private void Them_CuaHang_Load(object sender, EventArgs e)
@@ -88,7 +95,15 @@ namespace QuanLyChuoiCH.View
         {
             CH.Them_CuaHang(txt_MaCH.Text, txt_TenCH.Text, txt_SDT.Text, txt_DiaChi.Text, Cmb_QuanLy.SelectedValue.ToString());
             //Them_CuaHang(CuaHang.)
-            CH2.load();
+            if (fXK != null)
+            {
+                fXK.load();
+            };
+            if (CH2 != null)
+            {
+                CH2.load();
+            };
+            
             this.Close();
         }
 

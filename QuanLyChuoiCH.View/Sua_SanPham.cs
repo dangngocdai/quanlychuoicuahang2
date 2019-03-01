@@ -28,7 +28,7 @@ namespace QuanLyChuoiCH.View
         private void Sua_SanPham_Load(object sender, EventArgs e)
         {
             cmb_LoaiSP.DataSource = LSP.GetData();
-            cmb_NhomSP.DataSource = NSP.GetData();
+            //cmb_NhomSP.DataSource = NSP.GetData();
             cmb_MaNCC.DataSource = NCC.GetData();
             cmb_LoaiSP.DisplayMember = "TenLoaiSP";
             cmb_LoaiSP.ValueMember = "MaLoaiSP";

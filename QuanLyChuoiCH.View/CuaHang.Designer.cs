@@ -45,6 +45,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.cuaHang_LayTableAdapter = new QuanLyChuoiCH.View.QuanLyChuoiCuaHang2DataSetTableAdapters.CuaHang_LayTableAdapter();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuaHangLayBindingSource)).BeginInit();
@@ -53,6 +54,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button1);
@@ -202,6 +204,17 @@
             // 
             this.cuaHang_LayTableAdapter.ClearBeforeFill = true;
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(602, 33);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(127, 69);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Quản Lý";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // CuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,5 +256,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maNgQuanLyDataGridViewTextBoxColumn;
         public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button5;
     }
 }

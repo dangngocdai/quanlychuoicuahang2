@@ -18,10 +18,16 @@ namespace QuanLyChuoiCH.View
         private BUS_NhaCC NCC = new BUS_NhaCC();
         private BUS_SP SP = new BUS_SP();
         private SanPham FSP = new SanPham();
+        NhapKho fNK;
         public Them_SanPham(SanPham SP)
         {
             InitializeComponent();
             FSP = SP;
+        }
+        public Them_SanPham(NhapKho fNK1)
+        {
+            InitializeComponent();
+            fNK = fNK1;
         }
 
         private void Them_SanPham_Load(object sender, EventArgs e)
@@ -29,9 +35,9 @@ namespace QuanLyChuoiCH.View
             cmb_LoaiSP.DataSource = LSP.GetData();
             cmb_LoaiSP.DisplayMember = "TenLoaiSP";
             cmb_LoaiSP.ValueMember = "MaLoaiSP";
-            cmb_NhomSP.DataSource = NSP.GetData();
-            cmb_NhomSP.DisplayMember = "TenNhomSP";
-            cmb_NhomSP.ValueMember = "MaNhomSP";
+            //cmb_NhomSP.DataSource = NSP.GetData();
+            //cmb_NhomSP.DisplayMember = "TenNhomSP";
+            //cmb_NhomSP.ValueMember = "MaNhomSP";
             cmb_MaNCC.DataSource = NCC.GetData();
             cmb_MaNCC.DisplayMember = "TenNCC";
             cmb_MaNCC.ValueMember = "MaNCC";
@@ -40,7 +46,15 @@ namespace QuanLyChuoiCH.View
         private void bt_Them_Click(object sender, EventArgs e)
         {
             SP.insertData(txt_MaSP.Text, txt_TenSP.Text, cmb_LoaiSP.SelectedValue.ToString(), cmb_MaNCC.SelectedValue.ToString(), Rtxt_ThongTin.Text, txt_GiaBan.Text, txt_BaoHanh.Text);
-            FSP.load();
+            if (fNK != null)
+            {
+                fNK.load();
+            };
+            if (FSP != null)
+            {
+                FSP.load();
+            };
+            //FSP.load();
             this.Close();
         }
 

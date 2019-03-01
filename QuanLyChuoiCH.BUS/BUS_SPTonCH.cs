@@ -30,5 +30,23 @@ namespace QuanLyChuoiCH.BUS
         {
             t.delete(MaKho);
         }
+        public int CheckMaSP(String MaSP, String MaCH)
+        {
+            return t.CheckMaSP(MaSP, MaCH);
+        }
+        public void ThemSP(String MaCH, String MaSP, String SoLuong)
+        {
+
+            t.ThemSP(MaCH, MaSP, SoLuong);
+        }
+        public void BoSP(String MaCH, String MaSP, String SoLuong)
+        {
+
+            t.BoSP(MaCH, MaSP, SoLuong);
+        }
+        public int CheckSoLuong(String MaCH, String MaSP)
+        {
+            return t.CheckSoLuong(MaCH, MaSP);
+        }
     }
 }

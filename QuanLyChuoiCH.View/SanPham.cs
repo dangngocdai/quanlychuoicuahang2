@@ -51,30 +51,26 @@ namespace QuanLyChuoiCH.View
 
             return dataGridView1.CurrentRow.Cells[2].Value.ToString();
         }
-        public string layNhomSanPham()
+        
+        public string layNhaCC()
         {
 
             return dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
-        public string layNhaCC()
+        public string layThongTin()
         {
 
             return dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
-        public string layThongTin()
+        public string layGiaBan()
         {
 
             return dataGridView1.CurrentRow.Cells[5].Value.ToString();
         }
-        public string layGiaBan()
-        {
-
-            return dataGridView1.CurrentRow.Cells[6].Value.ToString();
-        }
         public string layBaoHanh()
         {
 
-            return dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            return dataGridView1.CurrentRow.Cells[6].Value.ToString();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

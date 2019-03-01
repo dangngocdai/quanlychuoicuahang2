@@ -20,6 +20,7 @@ namespace QuanLyChuoiCH.View
         KhachHang fKH = new KhachHang();
         BUS_CTHDBan CTHDBan = new BUS_CTHDBan();
         BUS_HDBan HDBan = new BUS_HDBan();
+        BUS_SPTonCH SPTCH = new BUS_SPTonCH();
         public string macuahang = "";
         
         public HoaDonBan(CuaHang fCH1)
@@ -80,6 +81,7 @@ namespace QuanLyChuoiCH.View
                 string cotMaSP = dataGridView1.Rows[i].Cells[0].Value.ToString();
                 string cotSoLuong = dataGridView1.Rows[i].Cells[3].Value.ToString();
                 CTHDBan.insertData(MaHDBan, cotMaSP, cotSoLuong);
+                SPTCH.BoSP(macuahang, cotMaSP, cotSoLuong);
             }
 
             fCH.load();
@@ -133,6 +135,14 @@ namespace QuanLyChuoiCH.View
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void num_SoSP_ValueChanged(object sender, EventArgs e)
+        {
+            if (SPTCH.CheckSoLuong(fCH.layMaCH(), txt_MaSP.Text) < num_SoSP.Value)
+            {
+                MessageBox.Show("Số Lượng Vượt Quá Sản Phẩm Trong Kho Cửa Hàng");
+            }
         }
     }
 }

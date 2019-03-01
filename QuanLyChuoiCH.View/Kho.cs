@@ -24,6 +24,7 @@ namespace QuanLyChuoiCH.View
             load();
             bt_Sua.Enabled = false;
             bt_Xoa.Enabled = false;
+            bt_Xuat.Enabled = false;
         }
         public void load()
         {
@@ -65,6 +66,7 @@ namespace QuanLyChuoiCH.View
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            bt_Xuat.Enabled = true;
             bt_Sua.Enabled = true;
             if (K.check_MaKho(dataGridView1.CurrentRow.Cells[0].Value.ToString()) == 0)
             {
@@ -93,6 +95,29 @@ namespace QuanLyChuoiCH.View
         private void bt_All_Click(object sender, EventArgs e)
         {
             load();
+        }
+        public string layMaKho()
+        {
+
+            return dataGridView1.CurrentRow.Cells[0].Value.ToString();
+        }
+
+        private void bt_Nhap_Click(object sender, EventArgs e)
+        {
+            NhapKho f = new NhapKho(this);
+            f.Show();
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SPTonKho f = new SPTonKho(this);
+            f.Show();
+        }
+
+        private void bt_Xuat_Click(object sender, EventArgs e)
+        {
+            XuatKho f = new XuatKho(this);
+            f.Show();
         }
     }
 }

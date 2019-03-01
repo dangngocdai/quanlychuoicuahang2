@@ -33,13 +33,13 @@
             this.bt_Them = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bt_Xuat = new System.Windows.Forms.Button();
+            this.bt_Nhap = new System.Windows.Forms.Button();
             this.bt_All = new System.Windows.Forms.Button();
             this.bt_TimKiem = new System.Windows.Forms.Button();
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bt_Nhap = new System.Windows.Forms.Button();
-            this.bt_Xuat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +91,7 @@
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // groupBox1
             // 
@@ -107,6 +108,26 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Công Cụ";
+            // 
+            // bt_Xuat
+            // 
+            this.bt_Xuat.Location = new System.Drawing.Point(576, 38);
+            this.bt_Xuat.Name = "bt_Xuat";
+            this.bt_Xuat.Size = new System.Drawing.Size(93, 70);
+            this.bt_Xuat.TabIndex = 8;
+            this.bt_Xuat.Text = "Xuất Kho";
+            this.bt_Xuat.UseVisualStyleBackColor = true;
+            this.bt_Xuat.Click += new System.EventHandler(this.bt_Xuat_Click);
+            // 
+            // bt_Nhap
+            // 
+            this.bt_Nhap.Location = new System.Drawing.Point(438, 38);
+            this.bt_Nhap.Name = "bt_Nhap";
+            this.bt_Nhap.Size = new System.Drawing.Size(109, 70);
+            this.bt_Nhap.TabIndex = 7;
+            this.bt_Nhap.Text = "Nhập Kho";
+            this.bt_Nhap.UseVisualStyleBackColor = true;
+            this.bt_Nhap.Click += new System.EventHandler(this.bt_Nhap_Click);
             // 
             // bt_All
             // 
@@ -153,24 +174,6 @@
             this.label1.Size = new System.Drawing.Size(64, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kho";
-            // 
-            // bt_Nhap
-            // 
-            this.bt_Nhap.Location = new System.Drawing.Point(438, 38);
-            this.bt_Nhap.Name = "bt_Nhap";
-            this.bt_Nhap.Size = new System.Drawing.Size(109, 70);
-            this.bt_Nhap.TabIndex = 7;
-            this.bt_Nhap.Text = "Nhập Kho";
-            this.bt_Nhap.UseVisualStyleBackColor = true;
-            // 
-            // bt_Xuat
-            // 
-            this.bt_Xuat.Location = new System.Drawing.Point(576, 38);
-            this.bt_Xuat.Name = "bt_Xuat";
-            this.bt_Xuat.Size = new System.Drawing.Size(93, 70);
-            this.bt_Xuat.TabIndex = 8;
-            this.bt_Xuat.Text = "Xuất Kho";
-            this.bt_Xuat.UseVisualStyleBackColor = true;
             // 
             // Kho
             // 

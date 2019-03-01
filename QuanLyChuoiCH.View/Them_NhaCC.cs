@@ -15,16 +15,28 @@ namespace QuanLyChuoiCH.View
     {
         BUS_NhaCC NCC = new BUS_NhaCC();
         NhaCC fNCC = new NhaCC();
+        NhapKho fNK;
         public Them_NhaCC(NhaCC fNCC1)
         {
             InitializeComponent();
             fNCC = fNCC1;
         }
-
+        public Them_NhaCC(NhapKho fNK1)
+        {
+            InitializeComponent();
+            fNK = fNK1;
+        }
+       
         private void bt_Them_Click(object sender, EventArgs e)
         {
             NCC.insert(txt_MaNCC.Text, txt_TenNCC.Text, txt_SDT.Text, txt_DiaChi.Text);
-            fNCC.load();
+            if(fNK != null) {
+                fNK.load();
+            };
+            if (fNCC != null)
+            {
+                fNCC.load();
+            };
             this.Close();
         }
 

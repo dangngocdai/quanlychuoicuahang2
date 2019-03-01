@@ -4,27 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Data.SqlClient;
 using QuanLyChuoiCH.DAL;
 
 namespace QuanLyChuoiCH.BUS
 {
-    public class BUS_CTHDNhapKho
+   public class BUS_CTHDXuatKho
     {
-        DAL_CTHDNhapKho c = new DAL_CTHDNhapKho();
+        DAL_CTHDXuatKho c = new DAL_CTHDXuatKho();
         public DataTable GetData()
         {
 
             return c.GetData();
         }
-        public void insertData(String MaHDNhapKho, String MaSP, String SoLuong, String GiaNhap)
+        public void insertData(String MaHDXuatKho, String MaSP, String SoLuong)
         {
 
-            c.insertData( MaHDNhapKho, MaSP, SoLuong, GiaNhap);
+            c.insertData(MaHDXuatKho, MaSP, SoLuong);
         }
-        public void update(String MaCTHDNhapKho, String MaHDNhapKho, String MaSP, String SoLuong, String GiaNhap)
+        public void update( String MaHDXuatKho, String MaSP, String SoLuong)
         {
 
-            c.update(MaCTHDNhapKho, MaHDNhapKho, MaSP, SoLuong, GiaNhap);
+            c.update(MaHDXuatKho, MaSP, SoLuong);
         }
         public void delete(String MaCTHDNhapKho)
         {

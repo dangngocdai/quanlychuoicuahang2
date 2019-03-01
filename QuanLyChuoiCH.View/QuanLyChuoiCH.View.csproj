@@ -82,6 +82,12 @@
     <Compile Include="NhaCC.Designer.cs">
       <DependentUpon>NhaCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhapKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     </Compile>
     <Compile Include="SPTonCH.Designer.cs">
       <DependentUpon>SPTonCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPTonKho.Designer.cs">
+      <DependentUpon>SPTonKho.cs</DependentUpon>
     </Compile>
     <Compile Include="SuaCuaHang.cs">
       <SubType>Form</SubType>
@@ -228,6 +240,18 @@
     <Compile Include="Sua_LoaiSP.Designer.cs">
       <DependentUpon>Sua_LoaiSP.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatKho.Designer.cs">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HoaDonBan.resx">
       <DependentUpon>HoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +270,9 @@
     <EmbeddedResource Include="NhaCC.resx">
       <DependentUpon>NhaCC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhapKho.resx">
       <DependentUpon>NhapKho.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SPTonCH.resx">
       <DependentUpon>SPTonCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPTonKho.resx">
+      <DependentUpon>SPTonKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuaCuaHang.resx">
       <DependentUpon>SuaCuaHang.cs</DependentUpon>
@@ -325,6 +355,12 @@
     <EmbeddedResource Include="Them_SanPham.resx">
       <DependentUpon>Them_SanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatKho.resx">
+      <DependentUpon>XuatKho.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -357,6 +393,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\cart-icon.png" />
+    <None Include="Resources\warehouse.png" />
+    <None Include="Resources\online-store.png" />
     <None Include="Resources\plus-black-symbol.png" />
     <None Include="img\key.png" />
     <Content Include="img\plus-black-symbol.png" />

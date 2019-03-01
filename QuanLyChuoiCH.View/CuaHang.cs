@@ -52,6 +52,7 @@ namespace QuanLyChuoiCH.View
             load();
             button3.Enabled = false;
             button4.Enabled = false;
+            //bt_ChiTiet.Enabled = false;
         }
         public void load()
         {
@@ -97,6 +98,7 @@ namespace QuanLyChuoiCH.View
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //bt_ChiTiet.Enabled = true;
             button3.Enabled = true;
             int kq = CH.Check_MaCH(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             if (kq == 0)
@@ -122,6 +124,13 @@ namespace QuanLyChuoiCH.View
             //MessageBox.Show("Đại");
             HoaDonBan f = new HoaDonBan(this);
             f.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            QuanLy f = new QuanLy();
+            f.Show();
+            this.Close();
         }
     }
 }

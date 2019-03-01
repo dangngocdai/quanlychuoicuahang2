@@ -41,10 +41,12 @@
             this.txt_SDT = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Rtxt_DiaChi = new System.Windows.Forms.RichTextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmb_NgQuanLy
             // 
+            this.cmb_NgQuanLy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_NgQuanLy.FormattingEnabled = true;
             this.cmb_NgQuanLy.Location = new System.Drawing.Point(234, 271);
             this.cmb_NgQuanLy.Name = "cmb_NgQuanLy";
@@ -156,11 +158,25 @@
             this.Rtxt_DiaChi.TabIndex = 61;
             this.Rtxt_DiaChi.Text = "";
             // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::QuanLyChuoiCH.View.Properties.Resources.plus_black_symbol;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button6.Location = new System.Drawing.Point(416, 268);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(37, 32);
+            this.button6.TabIndex = 116;
+            this.button6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // ThemKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(646, 336);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.Rtxt_DiaChi);
             this.Controls.Add(this.txt_SDT);
             this.Controls.Add(this.label5);
@@ -175,7 +191,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ThemKho";
             this.Text = "Thêm Kho";
             this.Load += new System.EventHandler(this.ThemKho_Load);
@@ -198,5 +214,6 @@
         private System.Windows.Forms.TextBox txt_SDT;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox Rtxt_DiaChi;
+        private System.Windows.Forms.Button button6;
     }
 }

@@ -182,6 +182,7 @@
             // 
             // cmb_MaKH
             // 
+            this.cmb_MaKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_MaKH.FormattingEnabled = true;
             this.cmb_MaKH.Location = new System.Drawing.Point(605, 116);
             this.cmb_MaKH.Name = "cmb_MaKH";
@@ -190,6 +191,7 @@
             // 
             // cmb_MaNV
             // 
+            this.cmb_MaNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_MaNV.FormattingEnabled = true;
             this.cmb_MaNV.Location = new System.Drawing.Point(605, 207);
             this.cmb_MaNV.Name = "cmb_MaNV";
@@ -351,6 +353,7 @@
             this.num_SoSP.Size = new System.Drawing.Size(120, 29);
             this.num_SoSP.TabIndex = 33;
             this.num_SoSP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.num_SoSP.ValueChanged += new System.EventHandler(this.num_SoSP_ValueChanged);
             // 
             // button1
             // 
