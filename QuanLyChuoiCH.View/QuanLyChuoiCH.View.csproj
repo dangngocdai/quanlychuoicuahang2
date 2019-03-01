@@ -94,6 +94,12 @@
     <Compile Include="SanPham.Designer.cs">
       <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="SPTonCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPTonCH.Designer.cs">
+      <DependentUpon>SPTonCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuaCuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     <EmbeddedResource Include="SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SPTonCH.resx">
+      <DependentUpon>SPTonCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SuaCuaHang.resx">
       <DependentUpon>SuaCuaHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,7 +338,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\plus-black-symbol.png" />
     <None Include="img\key.png" />
+    <Content Include="img\plus-black-symbol.png" />
     <Content Include="img\profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

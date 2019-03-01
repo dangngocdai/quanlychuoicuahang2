@@ -32,8 +32,8 @@ namespace QuanLyChuoiCH.View
             cmb_MaNCC.DataSource = NCC.GetData();
             cmb_LoaiSP.DisplayMember = "TenLoaiSP";
             cmb_LoaiSP.ValueMember = "MaLoaiSP";
-            cmb_NhomSP.DisplayMember = "TenNhomSP";
-            cmb_NhomSP.ValueMember = "MaNhomSP";
+            //cmb_NhomSP.DisplayMember = "TenNhomSP";
+            //cmb_NhomSP.ValueMember = "MaNhomSP";
             cmb_MaNCC.DisplayMember = "TenNCC";
             cmb_MaNCC.ValueMember = "MaNCC";
             //cmb_LoaiSP.Text = FSP.layLoaiSanPham();
@@ -48,7 +48,7 @@ namespace QuanLyChuoiCH.View
 
         private void bt_Sua_Click(object sender, EventArgs e)
         {
-            SP.update(txt_MaSP.Text, txt_TenSP.Text, cmb_LoaiSP.SelectedValue.ToString(), cmb_NhomSP.SelectedValue.ToString(), cmb_MaNCC.SelectedValue.ToString(), Rtxt_ThongTin.Text, txt_GiaBan.Text, txt_BaoHanh.Text);
+            SP.update(txt_MaSP.Text, txt_TenSP.Text, cmb_LoaiSP.SelectedValue.ToString(), cmb_MaNCC.SelectedValue.ToString(), Rtxt_ThongTin.Text, txt_GiaBan.Text, txt_BaoHanh.Text);
             FSP.load();
             this.Close();
         }

@@ -43,7 +43,7 @@ namespace QuanLyChuoiCH.View
         }*/
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            
         }
 
         private void CuaHang_Load(object sender, EventArgs e)
@@ -110,6 +110,18 @@ namespace QuanLyChuoiCH.View
             String Giatri = textBox1.Text;
             dataGridView1.DataSource = CH.TimKiem(Giatri);
             //this.load();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //MessageBox.Show("Đại");
+            HoaDonBan f = new HoaDonBan(this);
+            f.Show();
         }
     }
 }

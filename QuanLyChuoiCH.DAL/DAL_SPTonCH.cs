@@ -7,13 +7,14 @@ using System.Data;
 using System.Data.SqlClient;
 namespace QuanLyChuoiCH.DAL
 {
-    public class DAL_SPTonkhocs : DBConnect
+    public class DAL_SPTonCH : DBConnect
     {
-        public DataTable GetData()
+        public DataTable GetData(String MaCH)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("SPTonCH_Lay", con);//thực hiện các câu lệnh truy vẫn. nhưng đéo có truy vẫn mà là store procedure
+            SqlCommand cmd = new SqlCommand("SPTonCH_LayTheoCH", con);//thực hiện các câu lệnh truy vẫn. nhưng đéo có truy vẫn mà là store procedure
             cmd.CommandType = CommandType.StoredProcedure;//chú thích cho hiểu là đang dùng storedprocedure
+            cmd.Parameters.Add(new SqlParameter("@MaCH", MaCH));
             DataTable tb = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(tb);

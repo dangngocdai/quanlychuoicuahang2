@@ -15,6 +15,7 @@ namespace QuanLyChuoiCH.View
     {
         BUS_KhachHang KH = new BUS_KhachHang();
         KhachHang fKH = new KhachHang();
+        CuaHang fCH = new CuaHang();
         public Them_KhachHang(KhachHang fKH1)
         {
             InitializeComponent();
@@ -28,8 +29,9 @@ namespace QuanLyChuoiCH.View
 
         private void bt_Them_Click(object sender, EventArgs e)
         {
+            HoaDonBan f = new HoaDonBan(fCH);
             KH.insertData(txt_MaSP.Text, txt_TenSP.Text, txt_GiaBan.Text, textBox1.Text);
-            
+            f.load();
             fKH.load();
             this.Close();
         }

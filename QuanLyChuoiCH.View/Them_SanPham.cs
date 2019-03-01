@@ -39,7 +39,7 @@ namespace QuanLyChuoiCH.View
 
         private void bt_Them_Click(object sender, EventArgs e)
         {
-            SP.insertData(txt_MaSP.Text, txt_TenSP.Text, cmb_LoaiSP.SelectedValue.ToString(), cmb_NhomSP.SelectedValue.ToString(), cmb_MaNCC.SelectedValue.ToString(), Rtxt_ThongTin.Text, txt_GiaBan.Text, txt_BaoHanh.Text);
+            SP.insertData(txt_MaSP.Text, txt_TenSP.Text, cmb_LoaiSP.SelectedValue.ToString(), cmb_MaNCC.SelectedValue.ToString(), Rtxt_ThongTin.Text, txt_GiaBan.Text, txt_BaoHanh.Text);
             FSP.load();
             this.Close();
         }

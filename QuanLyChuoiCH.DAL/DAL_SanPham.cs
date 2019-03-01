@@ -20,7 +20,7 @@ namespace QuanLyChuoiCH.DAL
             con.Close();
             return tb;
         }
-        public void insertData(String MaSP, String TenSP, String MaLoaiSP, String MaNhomSP, String MaNCC, String ThongTinSP , String GiaBan , String BaoHanh)
+        public void insertData(String MaSP, String TenSP, String MaLoaiSP, String MaNCC, String ThongTinSP , String GiaBan , String BaoHanh)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("SP_Them", con);
@@ -28,7 +28,7 @@ namespace QuanLyChuoiCH.DAL
             cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
             cmd.Parameters.Add(new SqlParameter("@TenSP", TenSP));
             cmd.Parameters.Add(new SqlParameter("@MaLoaiSP", MaLoaiSP));
-            cmd.Parameters.Add(new SqlParameter("@MaNhomSP", MaNhomSP));
+           
             cmd.Parameters.Add(new SqlParameter("@MaNCC", MaNCC));
             cmd.Parameters.Add(new SqlParameter("@ThongTinSP", ThongTinSP));
             cmd.Parameters.Add(new SqlParameter("@GiaBan", GiaBan));
@@ -36,7 +36,7 @@ namespace QuanLyChuoiCH.DAL
             cmd.ExecuteNonQuery();
             con.Close();
         }
-        public void update(String MaSP, String TenSP, String MaLoaiSP, String MaNhomSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
+        public void update(String MaSP, String TenSP, String MaLoaiSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("SP_Sua", con);
@@ -44,7 +44,7 @@ namespace QuanLyChuoiCH.DAL
             cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
             cmd.Parameters.Add(new SqlParameter("@TenSP", TenSP));
             cmd.Parameters.Add(new SqlParameter("@MaLoaiSP", MaLoaiSP));
-            cmd.Parameters.Add(new SqlParameter("@MaNhomSP", MaNhomSP));
+            
             cmd.Parameters.Add(new SqlParameter("@MaNCC", MaNCC));
             cmd.Parameters.Add(new SqlParameter("@ThongTinSP", ThongTinSP));
             cmd.Parameters.Add(new SqlParameter("@GiaBan", GiaBan));
@@ -99,6 +99,66 @@ namespace QuanLyChuoiCH.DAL
 
             con.Close();
             return tb;
+        }
+        public string TenSP(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("selectTenSP", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            String kq = (String)cmd.ExecuteScalar();
+            con.Close();
+            return kq;
+        }
+        public string NhaCC(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("selectNhaCC", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            String kq = (String)cmd.ExecuteScalar();
+            con.Close();
+            return kq;
+        }
+        public string ThongTin(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("selectThongTinSP", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            String kq = (String)cmd.ExecuteScalar();
+            con.Close();
+            return kq;
+        }
+        public string GiaBan(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("selectGiaSP", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            String kq = (String)cmd.ExecuteScalar();
+            con.Close();
+            return kq;
+        }
+        public string BaoHanh(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("selectBaoHanhSP", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            String kq = (String)cmd.ExecuteScalar();
+            con.Close();
+            return kq;
+        }
+        public string LoaiSP(String MaSP)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("selectLoaiSP", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
+            String kq = (String)cmd.ExecuteScalar();
+            con.Close();
+            return kq;
         }
     }
 }

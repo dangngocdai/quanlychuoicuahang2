@@ -16,13 +16,13 @@ namespace QuanLyChuoiCH.BUS
 
             return o.GetData();
         }
-        public void insertData(String MaSP, String TenSP, String MaLoaiSP, String MaNhomSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
+        public void insertData(String MaSP, String TenSP, String MaLoaiSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
         {
-            o.insertData(MaSP, TenSP, MaLoaiSP, MaNhomSP, MaNCC, ThongTinSP, GiaBan, BaoHanh);
+            o.insertData(MaSP, TenSP, MaLoaiSP, MaNCC, ThongTinSP, GiaBan, BaoHanh);
         }
-        public void update(String MaSP, String TenSP, String MaLoaiSP, String MaNhomSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
+        public void update(String MaSP, String TenSP, String MaLoaiSP, String MaNCC, String ThongTinSP, String GiaBan, String BaoHanh)
         {
-            o.update(MaSP, TenSP, MaLoaiSP, MaNhomSP, MaNCC, ThongTinSP, GiaBan, BaoHanh);
+            o.update(MaSP, TenSP, MaLoaiSP, MaNCC, ThongTinSP, GiaBan, BaoHanh);
         }
         public void delete(String MaSP)
         {
@@ -36,6 +36,30 @@ namespace QuanLyChuoiCH.BUS
         {
 
             return o.TimKiem(Giatri);
+        }
+        public string TenSP(String MaSP)
+        {
+            return o.TenSP(MaSP);
+        }
+        public string LoaiSP(String MaSP)
+        {
+            return o.LoaiSP(MaSP);
+        }
+        public string NhaCC(String MaSP)
+        {
+            return o.NhaCC(MaSP);
+        }
+        public string ThongTin(String MaSP)
+        {
+            return o.ThongTin(MaSP);
+        }
+        public string GiaBan(String MaSP)
+        {
+            return o.GiaBan(MaSP);
+        }
+        public string BaoHanh(String MaSP)
+        {
+            return o.BaoHanh(MaSP);
         }
     }
 }
