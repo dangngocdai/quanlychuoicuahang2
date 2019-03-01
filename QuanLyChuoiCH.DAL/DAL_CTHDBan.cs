@@ -21,12 +21,12 @@ namespace QuanLyChuoiCH.DAL
             con.Close();
             return tb;
         }
-        public void insertData(String MaCTHDBan, String MaHDBan, String MaSP, String SoLuong)
+        public void insertData(String MaHDBan, String MaSP, String SoLuong)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("CTHDBan_Them", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add(new SqlParameter("@MaCTHDBan", MaCTHDBan));
+           // cmd.Parameters.Add(new SqlParameter("@MaCTHDBan", MaCTHDBan));
             cmd.Parameters.Add(new SqlParameter("@MaHDBan", MaHDBan));
             cmd.Parameters.Add(new SqlParameter("@MaSP", MaSP));
             cmd.Parameters.Add(new SqlParameter("@SoLuong", SoLuong));

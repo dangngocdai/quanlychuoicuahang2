@@ -21,7 +21,7 @@ namespace QuanLyChuoiCH.DAL
             con.Close();
             return tb;
         }
-        public void insertData(String MaHDBan, String MaCH, String MaKH, String NgayBan , String ThongTin , String MaNV)
+        public void insertData( String MaHDBan , String MaCH, String MaKH, String NgayBan , String ThongTin , String MaNV)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("HDBan_Them", con);

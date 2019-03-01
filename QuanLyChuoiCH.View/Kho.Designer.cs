@@ -38,6 +38,8 @@
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt_Nhap = new System.Windows.Forms.Button();
+            this.bt_Xuat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +94,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bt_Xuat);
+            this.groupBox1.Controls.Add(this.bt_Nhap);
             this.groupBox1.Controls.Add(this.bt_All);
             this.groupBox1.Controls.Add(this.bt_TimKiem);
             this.groupBox1.Controls.Add(this.txt_TimKiem);
@@ -150,6 +154,24 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Kho";
             // 
+            // bt_Nhap
+            // 
+            this.bt_Nhap.Location = new System.Drawing.Point(438, 38);
+            this.bt_Nhap.Name = "bt_Nhap";
+            this.bt_Nhap.Size = new System.Drawing.Size(109, 70);
+            this.bt_Nhap.TabIndex = 7;
+            this.bt_Nhap.Text = "Nhập Kho";
+            this.bt_Nhap.UseVisualStyleBackColor = true;
+            // 
+            // bt_Xuat
+            // 
+            this.bt_Xuat.Location = new System.Drawing.Point(576, 38);
+            this.bt_Xuat.Name = "bt_Xuat";
+            this.bt_Xuat.Size = new System.Drawing.Size(93, 70);
+            this.bt_Xuat.TabIndex = 8;
+            this.bt_Xuat.Text = "Xuất Kho";
+            this.bt_Xuat.UseVisualStyleBackColor = true;
+            // 
             // Kho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -184,5 +206,7 @@
         private System.Windows.Forms.TextBox txt_TimKiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt_Xuat;
+        private System.Windows.Forms.Button bt_Nhap;
     }
 }

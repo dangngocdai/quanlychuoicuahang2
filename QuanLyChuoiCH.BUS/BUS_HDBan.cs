@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using QuanLyChuoiCH.DAL;
-namespace QuanLyChuoiCH.DAL
+
+namespace QuanLyChuoiCH.BUS
 {
     public class BUS_HDBan
     {
@@ -15,10 +16,10 @@ namespace QuanLyChuoiCH.DAL
 
             return q.GetData();
         }
-        public void insertData(String MaHDBan, String MaCH, String MaKH, String NgayBan, String ThongTin, String MaNV)
+        public void insertData( String MaHDBan, String MaCH, String MaKH, String NgayBan, String ThongTin, String MaNV)
         {
 
-            q.insertData(MaHDBan, MaCH, MaKH, NgayBan, ThongTin,MaNV);
+            q.insertData(MaHDBan , MaCH, MaKH, NgayBan, ThongTin,MaNV);
         }
         public void update(String MaHDBan, String MaCH, String MaKH, String NgayBan, String ThongTin, String MaNV)
         {

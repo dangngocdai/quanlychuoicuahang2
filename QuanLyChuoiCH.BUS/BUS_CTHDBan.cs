@@ -8,7 +8,7 @@ using QuanLyChuoiCH.DAL;
 
 namespace QuanLyChuoiCH.BUS
 {
-    class BUS_CTHDBan
+   public class BUS_CTHDBan
     {
         DAL_CTHDBan m = new DAL_CTHDBan();
         public DataTable GetData()
@@ -16,10 +16,10 @@ namespace QuanLyChuoiCH.BUS
 
             return m.GetData();
         }
-        public void insertData(String MaCTHDBan, String MaHDBan, String MaSP, String SoLuong)
+        public void insertData(String MaHDBan, String MaSP, String SoLuong)
         {
 
-            m.insertData(MaCTHDBan, MaHDBan, MaSP, SoLuong);
+            m.insertData( MaHDBan, MaSP, SoLuong);
         }
         public void update(String MaCTHDBan, String MaHDBan, String MaSP, String SoLuong)
         {
